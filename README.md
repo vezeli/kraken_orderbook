@@ -36,5 +36,21 @@ python -m pip install -r requirements.txt
 
 The project is executed from terminal `python get_orderbook.py`.
 
+# Parameters
+
+`get_orderbook.py` has two parameters `pair` and `count` which are
+configurable. The former specifies the currency pair and the latter is the
+number of limit orders that are retrieved via Kraken® API. Apart from the
+crypto currencies at Kraken® we can also request _traditional_ FX pairs:
+
+|   pair   |  ticker  |
+|----------|----------|
+|  EURUSD  | ZEURZUSD |
+|  GBPUSD  | ZGBPZUSD |
+|  USDCAD  | ZUSDZCAD |
+|  EURCHF  |  EURCHF  |
+|  EURAUD  |  EURAUD  |
+|  USDJPY  | ZUSDZJPY |
+
 The code is open source and licensed under the terms of Apache license (see
 LICENSE).
