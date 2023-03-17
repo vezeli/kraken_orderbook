@@ -58,5 +58,5 @@ def _scale(orderbook: OrderBook, mid_price: float) -> OrderBook:
 
 
 def build_scaled_orderbook(data: dict, ccypair: str) -> OrderBook:
-    of = _orderbook_factory(data=data, ccypair=ccypair)
-    return _scale(orderbook=_build(of), mid_price=mid_price(of))
+    f = _orderbook_factory(data=data, ccypair=ccypair)
+    return _scale(orderbook=_build(f), mid_price=mid_price(f))
